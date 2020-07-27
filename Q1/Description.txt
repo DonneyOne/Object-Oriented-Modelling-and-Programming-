@@ -1,0 +1,8 @@
+The program asks for input of the user, which could either be "c" for a card game or "d" for die game identifying, which of two games the user wants to play.
+The user's input is being checked for validity and then he/she proceeds into the game chosen.
+There is a die game and a card game defined in the main Game class. The card game has the rules of defined 52 normal cards. The user gets 2 random cards.
+If the card that the user has gotten is Ace non-the-less of the suit of the ace, he/she wins. If not he/she loses.
+The other game defined is a die game, where the user would win only if he/she rolls one, otherwise, he/she loses.
+Both the games are completely random since there is a generator with a defined interface that would generate a random number with a specific seed that would be crucial
+in both card choosing and die rolling methods/processes. Functionally the two games share methods as they both have: Initialise game, main game and declare game winner.
+That is why the class of Game could be implemented as interface and the two games as classes that implement the Game interface. 
